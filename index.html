@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Cart Page</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container" id="header-box">
+            <div class="header1">
+                <div class="img-div"><img src="./images/m.png" alt="M" class="img1" /></div>
+                <div class="logo"><a href="#">Marmeto</a></div>
+            </div>
+            <div class="header2">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="cart-icon">
+                <div><a href="#"><i class="fas fa-search"></i></a></div>
+                <div><a href="#"><i class="far fa-heart"></i></a></div>
+                <div><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="container">
+            <div class="cart-box"></div>
+              <div class="cart-box2">
+                <div class="img-div2">
+                  <img src="./images/m.png" alt="M" class="img2" />
+                </div>
+                <div>
+                    <h1>Cart</h1>
+                </div>
+                <div class="breadcrumbs">
+                    <a href="#">Home &nbsp;></a>
+                    <a href="#" class="a1">Cart</a>
+                </div>
+            </div>
+
+            <div id="loader" style="display: none;">Loading...</div>
+
+            <div class="cart-content">
+                <table class="cart-table">
+                    <thead class="table-head">
+                        <tr>
+                            <th>Product Image</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <tr>
+                            <td colspan="6">No items in cart</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cart-totals">
+                    <div>
+                        <h2>Cart Totals</h2>
+                    </div>
+                    <div class="totals">
+                        <div class="subtotal">
+                            <span id="sub">Subtotal</span>
+                            <span id="subtotal-price">₹0.00</span>
+                        </div>
+                        <div class="total">
+                            <span id="tot">Total</span>
+                            <span id="total-price">₹0.00</span>
+                        </div>
+                    </div>
+                    <button id="checkout-btn">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container" id="footer-box">
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img src="./images/trophy 1.png" alt="High Quality" class="feature-logo">
+                    </div>
+                    <div class="feature-paragraph">
+                        <p class="feature-p1">High Quality</p>
+                        <p class="feature-p2">Crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img src="./images/guarantee.png" alt="Warranty Protection" class="feature-logo">
+                    </div>
+                    <div class="feature-paragraph">
+                        <p class="feature-p1">Warranty Protection</p>
+                        <p class="feature-p2">Over 2 years</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img src="./images/shipping.png" alt="Free Shipping" class="feature-logo">
+                    </div>
+                    <div class="feature-paragraph">
+                        <p class="feature-p1">Free Shipping</p>
+                        <p class="feature-p2">Order Over 150Rs</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-img">
+                        <img src="./images/Vector.png" alt="24/7 Support" class="feature-logo">
+                    </div>
+                    <div id="feature-paragraph">
+                        <div>
+                            <p class="feature-p1">24/7 Support</p>
+                        </div>
+                        <div>
+                            <p class="feature-p2">Dedicated Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
